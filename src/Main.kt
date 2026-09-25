@@ -180,17 +180,17 @@ fun task7() {
 }
 
 // 8
-class Massiv(private val arr: IntArray) {
+class ArrayProcessor(private val arr: IntArray) {
 
-    fun sumPlus(): Int {
+    fun sumPositive(): Int {
         var s = 0
         for (i in arr) {
             if (i > 0) s += i
         }
         return s
     }
-
-    fun proizv(): Int {
+    
+    fun product(): Int {
         var p = 1
         for (i in arr) {
             p *= i
@@ -198,7 +198,7 @@ class Massiv(private val arr: IntArray) {
         return p
     }
 
-    fun sred(): Double {
+    fun average(): Double {
         var s = 0
         for (i in arr) {
             s += i
@@ -209,10 +209,10 @@ class Massiv(private val arr: IntArray) {
 
 fun task8() {
     val arr = intArrayOf(-2, 3, 5, -1, 4, 0, 7)
-    val m = Massiv(arr)
-    println("Сумма положительных: " + m.sumPlus())
-    println("Произведение: " + m.proizv())
-    println("Среднее: " + m.sred())
+    val m = ArrayProcessor(arr)
+    println("Сумма положительных: " + m.sumPositive())
+    println("Произведение: " + m.product())
+    println("Среднее: " + m.average())
 }
 
 // 9
