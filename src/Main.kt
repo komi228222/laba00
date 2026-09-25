@@ -218,7 +218,7 @@ fun task8() {
 // 9
 class Vector(val x: Double, val y: Double, val z: Double) {
 
-    fun dlina(): Double {
+    fun length(): Double {
         return sqrt(x * x + y * y + z * z)
     }
 
@@ -239,7 +239,7 @@ fun task9() {
     val v1 = Vector(1.0, 2.0, 3.0)
     val v2 = Vector(3.0, 2.0, 1.0)
 
-    println("Длина v1 = " + v1.dlina())
+    println("Длина v1 = " + v1.length())
     println("Скаляр (метод): " + v1.dot(v2))
     println("Скаляр (infix): " + (v1 dot v2))
     println("Скаляр (*): " + (v1 * v2))
